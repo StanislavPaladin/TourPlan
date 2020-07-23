@@ -1,245 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Best Tour Plan Hotel Booking</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <header class="navbar">
-      <div class="container">
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img
-              src="img/horizontal-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo__image"
-            />
-          </a>
-          <form action="#" class="search navbar__search">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="search location"
-            />
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
-            </button>
-          </form>
-          <a href="#" class="user navbar__user">
-            <img
-              src="img/user__avatar.png"
-              alt="Icon: user avatar"
-              class="user__avatar"
-            />
-            <span class="user__name">Nathan</span>
-          </a>
-          <!-- /.user -->
-          <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Tour Plan Hotel Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-top">
+        <a href="#" class="logo">
+          <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
+        </a>
+        <form action="#" class="search navbar__search">
+          <input type="text" class="search__input" placeholder="search location" />
+          <button class="search__button">
+            <img src="img/search.svg" alt="Icon: search" />
           </button>
-        </div>
-        <!-- /.navbar-top -->
+        </form>
+        <a href="#" class="user navbar__user">
+          <img src="img/user__avatar.png" alt="Icon: user avatar" class="user__avatar" />
+          <span class="user__name">Nathan</span>
+        </a>
+        <!-- /.user -->
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
-      <!-- /.container -->
-      <div class="navbar-bottom">
-        <div class="container">
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">All Deals</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.container -->
-        <!-- /.navbar-menu -->
-      </div>
-    </header>
-    <nav class="breadcrumb">
+      <!-- /.navbar-top -->
+    </div>
+    <!-- /.container -->
+    <div class="navbar-bottom">
       <div class="container">
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Home</a>
+        <ul class="navbar-menu">
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
-          <li class="breadcrumb-list__item">
-            <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotels</a>
           </li>
-          <li class="breadcrumb-list__item">
-            Grand Hilton Hotel
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Activities</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Restaurants</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Events</a>
+          </li>
+          <li class="navbar-menu__item">
+            <a href="#" class="navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
       </div>
       <!-- /.container -->
-    </nav>
-    <!-- /.breadcrumb -->
-    <section class="hotel">
-      <div class="container">
-        <div class="hotel-info">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <div class="stars">
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-                <img src="img/Star.svg" alt="star" />
-              </div>
-              <div class="hotel-name hotel-info__name">GRAND HILTON HOTEL</div>
-              <span class="offer hotel-info__offer">Flash offer</span>
+      <!-- /.navbar-menu -->
+    </div>
+  </header>
+  <nav class="breadcrumb">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item">
+          <a href="#" class="breadcrumb-list__link">Home</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+        </li>
+        <li class="breadcrumb-list__item">
+          Grand Hilton Hotel
+        </li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- /.breadcrumb -->
+  <section class="hotel">
+    <div class="container">
+      <div class="hotel-info">
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+            <div class="stars">
+              <img src="img/Star.svg" alt="star" />
+              <img src="img/Star.svg" alt="star" />
+              <img src="img/Star.svg" alt="star" />
+              <img src="img/Star.svg" alt="star" />
+              <img src="img/Star.svg" alt="star" />
             </div>
-            <!-- /.hotel-wrapper -->
-            <p class="hotel-description hotel-info__description">
-              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
-              Free
-            </p>
+            <div class="hotel-name hotel-info__name">GRAND HILTON HOTEL</div>
+            <span class="offer hotel-info__offer">Flash offer</span>
           </div>
-          <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
-            <span class="rating__text">User ratings</span>
-            <span class="rating__counter">4.5/5</span>
-          </div>
-          <!-- /.hotel-info__right -->
+          <!-- /.hotel-wrapper -->
+          <p class="hotel-description hotel-info__description">
+            Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+            Free
+          </p>
         </div>
-        <!-- /.hotel-info -->
-        <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src= "img/slide.jpg" alt="slide" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src="img/slide1.jpg" alt="slide" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src="img/slide2.jpg" alt="slide" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src="img/slide3.jpg" alt="slide" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src="img/slide4.jpg" alt="slide" />
-                </div>
-                <div class="swiper-slide">
-                  <img class="swiper-slide_image" src="img/slide5.jpg" alt="slide" />
-                </div>
-                ...
+        <!-- /.hotel-info__text -->
+        <div class="rating hotel-info__rating">
+          <span class="rating__text">User ratings</span>
+          <span class="rating__counter">4.5/5</span>
+        </div>
+        <!-- /.hotel-info__right -->
+      </div>
+      <!-- /.hotel-info -->
+      <div class="hotel-grid">
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide.jpg" alt="slide" />
               </div>
-              <!-- If we need navigation buttons -->
-              <div class="slider-button slider-button--prev"></div>
-              <div class="slider-button slider-button--next"></div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide1.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide2.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide3.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide4.jpg" alt="slide" />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img class="swiper-slide_image" src="img/slide5.jpg" alt="slide" />
+              </div>
             </div>
-            <!-- /.swiper-container -->
+             
+            <!-- If we need navigation buttons -->
+            <div class="hotel-slider__button hotel-slider__button--prev"></div>
+            <div class="hotel-slider__button hotel-slider__button--next"></div>
           </div>
-          <!-- /.slider -->
-       <div class="hotel-right">
-        <div class="booking">
-          <div class="booking__info">
-            <div class="booking__price">
-              <span class="booking__start">price starts as</span>
-              <strong class="booking__pricetag">$ 8,500</strong>
-              <span class="booking__per-room">per room / night</span>
-            </div>
-            <!-- /.booking__price -->
-            <div class="booking__room">
-              <div class="booking__text">
-                <img
-                  src="img/user.svg"
-                  alt="Icon: user"
-                  class="booking__icon"
-                />
-                <span class="booking__description">2 x Guests</span>
+          <!-- /.swiper-container -->
+        <div class="hotel-right">
+          <div class="booking">
+            <div class="booking__info">
+              <div class="booking__price">
+                <span class="booking__start">price starts as</span>
+                <strong class="booking__pricetag">$ 8,500</strong>
+                <span class="booking__per-room">per room / night</span>
               </div>
+              <!-- /.booking__price -->
+              <div class="booking__room">
                 <div class="booking__text">
-                  <img
-                    src="img/home.svg"
-                    alt="Icon: home"
-                    class="booking__icon"
-                  />
+                  <img src="img/user.svg" alt="Icon: user" class="booking__icon" />
+                  <span class="booking__description">2 x Guests</span>
+                </div>
+                <div class="booking__text">
+                  <img src="img/home.svg" alt="Icon: home" class="booking__icon" />
                   <span class="booking__description">1 x Room</span>
                 </div>
               </div>
-            <!-- /.booking_room -->
+              <!-- /.booking_room -->
+            </div>
+            <!-- /.booking__info -->
+            <div class="booking__call-center">
+              <span class="booking__heading">Quick Booking</span>
+              <a class="booking__number" href="tel:12100">
+                <img src="img/phone-call.svg" alt="Icon: phone" />
+                <span class="booking__num">12100</span>
+              </a>
+            </div>
+            <!-- /.booking__call-center -->
+            <button class="button booking__button">View Other Options</button>
           </div>
-          <!-- /.booking__info -->
-          <div class="booking__call-center">
-            <span class="booking__heading">Quick Booking</span>
-            <a class="booking__number" href="tel:12100">
-              <img src="img/phone-call.svg" alt="Icon: phone" />
-              <span class="booking__num">12100</span>
-            </a>
+          <!-- /.booking -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40565.69513263327!2d30.184551095979465!3d50.54615029138644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33dfb5febdbe5259!2z0JHRg9GH0LDQvdGB0LrQuNC5INCz0L7RgNC-0LTRgdC60L7QuSDQv9Cw0YDQug!5e0!3m2!1sru!2sua!4v1595426586036!5m2!1sru!2sua"
+              width="100%" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0">
+            </iframe>
           </div>
-          <!-- /.booking__call-center -->
-          <button class="button booking__button">View Other Options</button>
+          <!-- /.map -->
         </div>
-        <!-- /.booking -->
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40565.69513263327!2d30.184551095979465!3d50.54615029138644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x33dfb5febdbe5259!2z0JHRg9GH0LDQvdGB0LrQuNC5INCz0L7RgNC-0LTRgdC60L7QuSDQv9Cw0YDQug!5e0!3m2!1sru!2sua!4v1595426586036!5m2!1sru!2sua" 
-          width="100%" 
-          height="213" 
-          frameborder="0" 
-          style="border:0;" 
-          allowfullscreen="" 
-          aria-hidden="false" 
-          tabindex="0">
-        </iframe>
-        </div>
-        <!-- /.map -->
-       </div>
-       <!-- /.hotel-right -->
-        </div>
-        <!-- /.hotel-grid -->
+        <!-- /.hotel-right -->
       </div>
-        <!-- /.container -->
-    </section>
-    <section class="newsletter">
-      <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
-          subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
-        </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
-          <input
-            type="text"
-            class="subscribe__input"
-            placeholder="Your email address"
-          />
-          <button class="subscribe__button">Send</button>
-          </button>
+      <!-- /.hotel-grid -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <section class="newsletter">
+    <div class="newsletter-wrapper">
+      <h2 class="newsletter-title newsletter__title">
+        subscribe to our
+        <span class="newsletter-title__strong">Newsletter</span>
+      </h2>
+      <form action="#" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address" />
+        <button class="subscribe__button">Send</button>
+        </button>
+    </div>
+    <!-- /.newsletter-wrapper -->
+  </section>
+  <!-- /.newsletter -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people think about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" 
+                alt="Photo: Megan Fox" 
+                class="reviews-slider__avatar"
+                />
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                  <img src="img/Star.svg" alt="star" />
+                </div>
+                <!-- ./rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <!-- /.newsletter-wrapper -->
-    </section>
-    <!-- /.newsletter -->
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+      <!-- ./reviews-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.reviews -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

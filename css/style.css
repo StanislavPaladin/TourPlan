@@ -532,6 +532,60 @@ template {
   justify-content: space-between;
 }
 
+.hotel-slider {
+  width: 725px;
+  height: 450px;
+}
+
+.hotel-slider__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hotel-slider__item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  z-index: 10;
+}
+
+.hotel-slider__button {
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+}
+
 .stars {
   flex-basis: 100%;
 }
@@ -562,59 +616,6 @@ template {
 .rating__conter {
   font-size: 14px;
   line-height: 18px;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border-radius: 8px;
-}
-
-.swiper-container:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 10;
-}
-
-.slider {
-  width: 725px;
-  height: 450px;
-}
-
-.slider-button {
-  top: 50%;
-  z-index: 99;
-  transform: translateY(-50%);
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-}
-
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-next.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-}
-
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-prev.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
 }
 
 .booking {
@@ -758,15 +759,17 @@ template {
 }
 
 .newsletter-title {
+  display: flex;
+  flex-direction: column;
   color: #ffffff;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin-right: 30px;
 }
 
 .newsletter-title__strong {
-  display: block;
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
@@ -804,6 +807,45 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+}
+
+.reviews {
+  padding: 40px 0 70px 0;
+}
+
+.reviews__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.reviews-slider__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 730px;
+  margin: 45px auto 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 62px 30px;
+}
+
+.reviews-slider__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -45px;
+}
+
+.reviews-slider__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -875,7 +917,8 @@ template {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container,
+  .newsletter-wraper {
     max-width: 576px;
     width: 92%;
   }
@@ -923,32 +966,38 @@ template {
     flex-basis: auto;
   }
   .slider {
-    width: 100%;
+    width: 90%;
     height: 350px;
   }
-}
-
-.newsletter-wrapper {
-  max-width: 576px;
-  width: 92%;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 @media (max-width: 576px) {
   .contaier {
     max-width: 320px;
     width: 92%;
+    margin: auto;
   }
   .logo {
     width: 99px;
   }
   .slider {
-    width: 100%;
+    width: 90%;
   }
   .hotel-right {
+    width: 100%;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     min-height: 450px;
+    margin-left: auto;
+  }
+  .newsletter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .newsletter-title {
+    margin-left: -70px;
   }
   .booking {
     width: 100%;
@@ -960,7 +1009,7 @@ template {
 
 @media (max-width: 320px) {
   .container {
-    max-width: 290px;
+    max-width: 320px;
     width: 92%;
   }
   .slider {
