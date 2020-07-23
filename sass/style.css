@@ -598,7 +598,7 @@ template {
   position: relative;
 }
 
-.slider-button {
+/* .slider-button {
   top: 0;
   position: absolute;
   height: 30px;
@@ -606,7 +606,7 @@ template {
   border: none;
   background-color: #red;
   z-index: 99;
-}
+} */
 
 @media (max-width: 1200px) {
   .container {
