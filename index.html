@@ -12,19 +12,19 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" class="search__input" placeholder="search location" />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user__avatar.png" alt="Icon: user avatar" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -41,6 +41,20 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="img/user__avatar.png" alt="Icon: user avatar" class="user__avatar" />
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="search location" />
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search" />
+              </button>
+            </form>
+          </li>
           <li class="navbar-menu__item">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
@@ -304,7 +318,7 @@
         <div class="card activities__card">
           <img src="img/activity-1.jpg" alt="The curious corner 
           of chamarel" class="card__image">
-          <h3 class="card__title">The curious corner 
+          <h3 class="card__title">The curious corner
             of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
@@ -338,6 +352,15 @@
       <!-- /.activities-wrapper -->
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+
+      </div>
+      <!-- /.footer-wrapper -->
+    </div>
+    <!-- /.container -->
+  </footer>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
