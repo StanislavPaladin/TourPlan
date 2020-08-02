@@ -452,18 +452,38 @@
           <h3 class="footer__title">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
           <ul class="footer__ul">
-            <li class="footer__item"><img src="img/map-mark.svg" alt="Icon: map marker" href="#">9748 Blossom Hill Rd
-              undefined Lansing, Idaho 68545 United States</li>
-            <li class="footer__item"><img src="img/phone-call.svg" alt="Icon: phone call" href="#">
+           <div class="footer__icon-wrapper">
+            <li class="footer__item footer__item--mb-2">
+              <img class="footer__icon footer__icon--map" 
+              src="img/map-mark.svg" 
+              alt="Icon: map marker" 
+              href="#">9748 Blossom Hill Rd
+              undefined Lansing, Idaho 68545 United States
+            </li>
+           </div>
+           <div class="footer__icon-wrapper">
+            <li class="footer__item footer__item--mb-2">
+              <img class="footer__icon" 
+              src="img/phone-call.svg"
+               alt="Icon: phone call" 
+               href="#">
               Tel (business hours) : 269 1500 <br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br>
             </li>
-            <li class="footer__item"><img src="img/email.svg" alt="Icon: email" href="#">cherly.lawson@example.com</li>
+           </div>
+           <div class="footer__icon-wrapper">
+            <li class="footer__item footer__item--mb-2">
+              <img class="footer__icon" 
+              src="img/email.svg" 
+              alt="Icon: email" 
+              href="#">cherly.lawson@example.com
+            </li>
+           </div>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
-      <div class="footer__contacts-form">
+      <div class="footer__contact-form">
         <h3 class="footer__title">Send us a message</h3>
         <form action="" class="footer__form">
           <input
@@ -475,7 +495,7 @@
           class="input footer__input"
           placeholder="Phone number">
           <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
-          <button class="button footer__button">Send</button>
+          <button class="button footer__button" type="submit">Send</button>
           <span class="footer__info">* Required Fields</span>
         </form>
       </div>
