@@ -1,0 +1,317 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+    width: 92%
+  .slider
+    width: 590px
+  .hotel
+    &-slider
+      &__image
+        height: 100%
+        width: 100%
+        object-fit: cover
+  .card
+    width: 230px
+    height: 230px
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
+
+@media (max-width: 992px)
+  .container,
+  .newsletter-wrapper
+    max-width: 700px
+    width: 92%
+  .logo
+    width: 132px
+  .navbar
+    &:first-of-type
+      padding-top: 30px
+      padding-bottom: 30px
+    &__search
+      margin-left: auto
+      max-width: 340px
+    &-menu
+      padding-top: 22px
+      padding-bottom: 22px
+      &__link
+        font-size: 12px
+        line-height: 15px
+  .search
+    &__input
+      width: 340px
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .booking
+    width: 340px
+  .slider
+    max-width: 590px
+    margin-left: auto
+    margin-right: auto
+  .map
+    width: 340px
+  .swiper
+    &-container
+      &:after
+        width: 100%
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 250px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      &-group
+        flex-basis: 48%
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
+
+@media (max-width: 768px)
+  .container,
+  .newsletter-wraper
+    height: 100%
+    max-width: 576px
+    width: 92%
+  body
+    padding-top: 98px
+
+  .navbar
+    &--mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
+      display: none
+      &--visible
+        display: block
+        position: fixed
+        left: 0
+        right: 0
+        bottom: 0
+        top: 98px
+        padding-top: 30px
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .hotel
+    &-slider
+      width: 90%
+      height: 350px
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    &-info
+      &__text
+        width: 100%
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
+  .stars
+    flex-basis: auto
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          left: 50%
+          margin-left: -100px
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -100px
+          transform: translate(50%, 0)
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px
+      text-align: center
+      text-transform: uppercase
+  .activities
+    padding-top: 14px
+    padding-bottom: 60px
+  .card
+    width: 49%
+    height: 255px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%  
+@media (max-width: 576px)
+  .contaier
+    max-width: 320px
+    width: 92%
+    margin: auto
+  .logo
+    width: 99px
+  .hotel
+    &-slider
+      height: 250px
+      width: 100%
+    &-right
+      width: 100%
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      min-height: 450px
+      margin-left: auto
+  .newsletter
+    &-wrapper
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    &-title
+      margin-left: -70px
+  .booking
+    width: 100%
+  .map
+    width: 100%
+  .card
+    width: 100%
+    height: 255px
+    margin-bottom: 20px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+
+@media (max-width: 320px)
+  .container
+    max-width: 320px
+    width: 92%
+  .slider
+    height: 250px
+  .hotel
+    &__slider
+      margin-bottom: 20px
+  .newsletter
+    padding: 76px 0 83px 0
+    &-title
+      margin-bottom: 37px
+  .subscribe
+    width: 90%
+  .reviews
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
