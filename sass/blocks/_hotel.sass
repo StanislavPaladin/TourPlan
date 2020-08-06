@@ -8,17 +8,20 @@
     align-items: center
     justify-content: space-between
     padding-bottom: 20px
+    &__info
+      margin-top: 10px
+      margin-bottom: 10px 
     &__rating
       cursor: pointer
     &__offer
       margin-left: 14px
-      margin-top: 4px
+      margin-top: 0px
       cursor: pointer
     &__name
-      margin-top: 4px
+      margin-top: 0
       margin-bottom: 0
     &__description
-      margin: 5px
+      margin: 0
   &-name
     font-size: 24px
     line-height: 30px
@@ -34,6 +37,7 @@
   &-description
     font-size: 12px
     line-height: 15px
+    margin: 0
   &-grid
     display: flex
     justify-content: space-between
@@ -41,7 +45,7 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    
+
   &-slider
     width: 725px
     height: 450px
@@ -118,27 +122,32 @@
   &__info
     display: flex
     justify-content: space-between
-    
+
   &__price
     display: flex
     flex-direction: column
   &__start
+    font-family: Nunito
     font-weight: normal
     font-size: 10px
     line-height: 14px
   &__pricetag
+    font-family: Nunito
     font-style: normal
     font-weight: 800
     font-size: 24px
     line-height: 33px
   &__per-room
+    font-family: Nunito
     font-style: normal
     font-weight: normal
     font-size: 12px
     line-height: 16px
   &__room
+    font-family: Nunito
     margin-top: 4px
   &__text
+    font-family: Nunito
     display: flex
     align-items: center
     justify-content: space-between
@@ -148,18 +157,22 @@
     font-size: 12px
     line-height: 16px
   &__description
+    font-family: Nunito
     margin-left: 9px
   &__call-center
+    font-family: Nunito
     margin-bottom: 17px
     display: flex
     align-items: center
     justify-content: space-between
   &__heading
+    font-family: Nunito
     font-style: normal
     font-weight: 600
     font-size: 18px
     line-height: 25px
   &__number
+    font-family: Nunito
     display: flex
     align-items: center
     justify-content: space-between
@@ -184,7 +197,15 @@
     border: none
     cursor: pointer
 .map
-  width: 347px
+  width: 100%
   height: 213px
-  border-radius: 10px
-  overflow: hidden
+  frameborder: 0
+  border: 0
+  aria-hidden: false
+  tabindex: 0
+  allowfullscreen:
+  &-wrapper
+    width: 347px
+    height: 213px
+    border-radius: 10px
+    overflow: hidden
