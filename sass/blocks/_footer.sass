@@ -1,0 +1,109 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 108px
+  padding-bottom: 46px
+  &__payment
+    grid-column: 4 / 6
+    margin-left: 30px
+    margin-top: 80px
+    &--info
+      grid-column: 2 / 4
+      margin-left: 20px
+      margin-top: 80px
+      color: $light
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(210px, 1fr))
+    grid-gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
+  &__logo
+    width: 166px
+    grid-row: 1 / 3
+    align-self: stretch
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &-links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+    &-network
+      display: flex
+      align-content: start
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__contact
+    &-details
+      grid-column: span 2
+    &-form
+      grid-column: span 2
+      max-width: 90%
+  &__form
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+  &__ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0 0 16px 0
+    text-transform: uppercase
+    &--inline
+      margin: 0 43px 0 0
+  &__item
+    display: flex
+    align-items: start
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+    &--mail, &--map, &--phone
+      text-decoration: none
+      color: inherit
+    &--mb-2
+      margin-bottom: 20px
+  &__icon
+    margin-right: 20px
+    &--map
+      margin-right: 26px
+    &-wrapper
+      min-width: 40px
+  &__text
+    color: $footer-text-color
+    margin-bottom: 22px
+  &__link
+    text-decoration: none
+    color: inherit
+  &__input
+    width: 100%
+    &-group
+      margin-top: 15px
+      flex-basis: 48%
+
+  &__message
+    flex-basis: 100%
+    margin-top: 15px
+  &__button
+    margin-top: 23px
+    cursor: pointer
+  &__info
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $footer-text-color
