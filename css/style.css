@@ -479,6 +479,22 @@ template {
   color: #333333;
 }
 
+.search__input::-webkit-input-placeholder {
+  color: #333333;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #333333;
+}
+
+.search__input:-moz-placeholder {
+  color: #333333;
+}
+
+.search__input::-moz-placeholder {
+  color: #333333;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -569,6 +585,11 @@ template {
 .hotel-info__info {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: Muli, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .hotel-info__rating {
@@ -945,6 +966,22 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.subscribe__input::-moz-placeholder {
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -1398,6 +1435,22 @@ template {
   width: 100%;
 }
 
+.footer__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
 .footer__input-group {
   margin-top: 15px;
   -ms-flex-preferred-size: 48%;
@@ -1409,6 +1462,22 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-top: 15px;
+}
+
+.footer__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__message::-moz-placeholder {
+  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1479,10 +1548,42 @@ template {
   margin-top: 15px;
 }
 
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-top: 15px;
+}
+
+.modal__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::-moz-placeholder {
+  color: #BDBDBD;
 }
 
 .modal__message__button {
@@ -1961,11 +2062,14 @@ template {
     margin-left: 10px;
   }
   .booking {
+    height: 210px;
     width: 100%;
+    margin-bottom: 20px;
   }
   .map-wrapper {
     margin: 0;
     width: 100%;
+    height: 173px;
   }
   .card {
     width: 100%;

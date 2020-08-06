@@ -51,6 +51,14 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
+    &::-webkit-input-placeholder
+      color: #333333
+    &:-ms-input-placeholder
+      color: #333333
+    &:-moz-placeholder
+      color: #333333
+    &::-moz-placeholder
+      color: #333333
   &__button
     position: absolute
     top: 0
@@ -60,7 +68,7 @@
     border: none
     background-color: $primary
     cursor: pointer
-  
+
 .user
   display: flex
   align-items: center
@@ -77,4 +85,3 @@
     line-height: 18px
     color: $text-color
     text-decoration: none
-
