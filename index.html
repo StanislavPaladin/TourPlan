@@ -129,7 +129,7 @@
           </p>
         </div>
         <!-- /.hotel-info__text -->
-        <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
+        <div  class="rating hotel-info__rating">
           <span class="rating__text">User ratings</span>
           <span class="rating__counter">4.5/</span><span style="font-size: 12px;">5</span>
         </div>
@@ -224,8 +224,8 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe">
-          <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
-          <button class="subscribe__button">Send</button>
+          <input type="text" class="subscribe__input" placeholder="Your email address" name="email" required />
+          <button class="subscribe__button" data-toggle="modal" data-href="#rating-modal">Send</button>
         </form>
       </div>
     </div>

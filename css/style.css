@@ -47,6 +47,14 @@ body .button {
   border-radius: 4px;
 }
 
+body .button:active {
+  outline: none;
+}
+
+body .button:focus {
+  outline: none;
+}
+
 body .invalid {
   color: #EC1F46;
 }
@@ -504,6 +512,14 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+}
+
+.search__button:active {
+  outline: none;
+}
+
+.search__button:focus {
+  outline: none;
 }
 
 .user {
@@ -994,6 +1010,14 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   cursor: pointer;
+}
+
+.subscribe__button:active {
+  outline: none;
+}
+
+.subscribe__button:focus {
+  outline: none;
 }
 
 .parallax-window {
@@ -1639,6 +1663,14 @@ template {
   .newsletter-wrapper {
     max-width: 700px;
   }
+  .modal__input {
+    width: 100%;
+    min-width: 300px;
+  }
+  .modal__message {
+    width: 100%;
+    min-width: 300px;
+  }
   .logo {
     width: 132px;
   }
@@ -1797,6 +1829,17 @@ template {
   }
   body {
     padding-top: 98px;
+  }
+  .modal__form {
+    width: 90%;
+  }
+  .modal__input {
+    width: 90%;
+    min-width: 250px;
+  }
+  .modal__message {
+    width: 90%;
+    min-width: 250px;
   }
   .navbar--mobile--fixed {
     position: fixed;
@@ -2072,6 +2115,8 @@ template {
     height: 173px;
   }
   .card {
+    min-width: 200px;
+    max-width: 281px;
     width: 100%;
     height: 255px;
     margin-bottom: 20px;
@@ -2158,6 +2203,18 @@ template {
   }
   .subscribe {
     width: 95%;
+  }
+  .modal__dialog {
+    max-width: 290px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .modal__input {
+    max-width: 200px;
+  }
+  .modal__message {
+    max-width: 200px;
   }
 }
 
