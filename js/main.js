@@ -65,7 +65,7 @@ $(".form").each(function () {
         minlength: "The name must be at least 2 characters long",
       },
       email: {
-        required: "We need your email address to contact you",
+        required: "TEST",
         email: "Your email address must be in the format of name@domain.com",
       },
       phone: {

@@ -16,7 +16,8 @@ $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
-<b>Почта:</b> $phone<br><br>
+<b>Почта:</b> $email<br>
+<b>Номер телефоана:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
