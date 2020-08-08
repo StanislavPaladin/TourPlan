@@ -503,7 +503,7 @@
                 placeholder="Your full name*" name="name" required>
             </div>
             <div class="footer__input-group">
-              <input type="text" class="input footer__input" placeholder="Phone number*" name="phone" required>
+              <input type="text" class="input footer__input" placeholder="Phone number*" name="phone" data-mask="+0(000)000-00-00" required>
             </div>
             <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
@@ -536,7 +536,7 @@
       <h3 class="modal__title">Booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your full name*" name="name" required minlength="2">
-        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone" required>
+        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone" data-mask="+0(000)000-00-00"required>
         <input type="text" class="input modal__input" placeholder="Your email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
@@ -556,7 +556,7 @@
       <h3 class="modal__title">Rating</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your full name*" name="name" required minlength="2">
-        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone" required>
+        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone" data-mask="+0(000)000-00-00" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
         <span class="modal__info">*&nbsp;Required Fields</span>
@@ -574,7 +574,7 @@
       <h3 class="modal__title">Book now</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your full name*" name="name" required minlength="2">
-        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone" required>
+        <input type="text" class="input modal__input" placeholder="Phone number*" name="phone"  data-mask="+0(000)000-00-00" required>
         <input type="text" class="input modal__input" placeholder="Your email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
@@ -591,6 +591,7 @@
   </script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/aos.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/parallax.js-1.5.0/parallax.js"></script>

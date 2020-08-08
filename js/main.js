@@ -56,6 +56,7 @@ function closeModal(event) {
 }
 
 //обработка форм
+
 $(".form").each(function () {
   $(this).validate({
     errorClass: "invalid",
