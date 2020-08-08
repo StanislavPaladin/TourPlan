@@ -3,6 +3,8 @@
   color: $light
   padding-top: 108px
   padding-bottom: 46px
+  &__legal
+    justify-self: end
   &__payment
     color: #BDBDBD
     cursor: pointer
@@ -105,6 +107,10 @@
     font-size: 12px
     line-height: 15px
     width: 100%
+    &-group
+      min-width: 240px
+      padding: 0
+      margin: 0
     &::-webkit-input-placeholder
       color: #BDBDBD
     &:-ms-input-placeholder
@@ -117,6 +123,7 @@
       margin-top: 15px
       flex-basis: 48%
   &__message
+    min-width: 480px
     min-height: 120px
     flex-basis: 100%
     margin-top: 15px
