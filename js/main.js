@@ -56,7 +56,6 @@ function closeModal(event) {
 }
 
 //обработка форм
-
 $(".form").each(function () {
   $(this).validate({
     errorClass: "invalid",
@@ -66,7 +65,7 @@ $(".form").each(function () {
         minlength: "The name must be at least 2 characters long",
       },
       email: {
-        required: "TEST",
+        required: "Enter your email",
         email: "Your email address must be in the format of name@domain.com",
       },
       phone: {
